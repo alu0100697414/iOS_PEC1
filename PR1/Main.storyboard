@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nzK-9J-BMJ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uX9-sg-ofy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XdV-7P-mK6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Initial amount: X €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLf-1A-Vx2">
@@ -81,11 +81,11 @@
                         <viewControllerLayoutGuide type="bottom" id="JLk-eI-wJp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pnz-gg-a7v">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpi-5P-p5y">
-                                <rect key="frame" x="156.5" y="315.5" width="62" height="36"/>
+                                <rect key="frame" x="176" y="350" width="62" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
@@ -117,18 +117,17 @@
                         <viewControllerLayoutGuide type="bottom" id="bhM-Dh-ztE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4N8-2t-QIs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="lTG-iq-Jtu">
-                                <rect key="frame" x="140.5" y="38" width="94" height="94"/>
+                                <rect key="frame" x="155.33333333333334" y="37.999999999999993" width="103.33333333333334" height="104.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lTG-iq-Jtu" secondAttribute="height" multiplier="1:1" id="CHc-Si-Clf"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-cn-def">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2z-cn-def">
                                 <rect key="frame" x="16" y="215.33333333333334" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -154,13 +153,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEU-NY-got">
-                                <rect key="frame" x="152" y="174.33333333333334" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvp-ef-iMb">
                                 <rect key="frame" x="310" y="366.33333333333331" width="49" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -170,10 +162,20 @@
                                     <action selector="loginTapped:" destination="nzK-9J-BMJ" eventType="touchUpInside" id="FbM-Cw-LBH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEU-NY-got">
+                                <rect key="frame" x="171.66666666666666" y="169.33333333333334" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BEU-NY-got" firstAttribute="top" secondItem="lTG-iq-Jtu" secondAttribute="bottom" constant="27.333333333333314" id="4zZ-Zm-jdA"/>
                             <constraint firstItem="lTG-iq-Jtu" firstAttribute="centerX" secondItem="4N8-2t-QIs" secondAttribute="centerX" id="78S-pN-ice"/>
+                            <constraint firstItem="BEU-NY-got" firstAttribute="centerX" secondItem="4N8-2t-QIs" secondAttribute="centerX" id="7tL-dA-0M5"/>
+                            <constraint firstItem="g2z-cn-def" firstAttribute="leading" secondItem="4N8-2t-QIs" secondAttribute="leading" constant="16" id="PU2-O4-aYi"/>
+                            <constraint firstItem="g2z-cn-def" firstAttribute="top" secondItem="BEU-NY-got" secondAttribute="bottom" constant="25" id="Zj5-Ol-Ed3"/>
                             <constraint firstItem="lTG-iq-Jtu" firstAttribute="width" secondItem="4N8-2t-QIs" secondAttribute="width" multiplier="1:4" id="dso-UJ-r3N"/>
                             <constraint firstItem="lTG-iq-Jtu" firstAttribute="top" secondItem="yTS-50-cmT" secondAttribute="bottom" constant="18" id="rFU-9X-OPk"/>
                         </constraints>
@@ -215,7 +217,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="aT5-BD-cRZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IuB-ob-99a">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -234,7 +236,7 @@
                     <tabBarItem key="tabBarItem" title="Calculator" image="calculator" id="kD9-O5-GsU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ncD-PQ-m3X">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -255,7 +257,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wJ5-x4-Zfc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mBQ-Rk-2RO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nER-Uv-rTV">
