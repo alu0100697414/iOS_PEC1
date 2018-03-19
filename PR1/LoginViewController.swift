@@ -15,10 +15,10 @@ class LoginViewController: UIViewController {
     // BEGIN-UOC-2
     @IBAction func loginTapped(_ sender: UIButton) {
         
-        let user: String = String(usernameField.text!);
-        let password: String = String(passwordField.text!);
-        
-        let loginAllowed = Services.validate(username: user, password: password);
+        let loginAllowed = Services.validate(
+            username: String(usernameField.text!),
+            password: String(passwordField.text!)
+        );
         
         if loginAllowed == false {
             Utils.show(Message: "Sorry, the username and password are invalid.", WithTitle: "Notification", InViewController: self);
