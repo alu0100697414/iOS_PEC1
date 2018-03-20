@@ -353,6 +353,9 @@
                                 <rect key="frame" x="229" y="223.5" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="qWi-qB-46D" eventType="touchUpInside" id="GFF-ge-YG7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -383,6 +386,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstField" destination="0Nb-Hl-lHc" id="Wgw-52-NEG"/>
+                        <outlet property="fourthField" destination="P5J-xy-r6k" id="0Ow-HL-y78"/>
+                        <outlet property="secondField" destination="1kT-Bg-b3C" id="sud-dS-pAk"/>
+                        <outlet property="thirdField" destination="Eqh-Oh-sDc" id="p4K-fM-t7g"/>
                         <segue destination="lnl-au-HBQ" kind="show" identifier="SegueToMainNavigation" id="wWO-IB-d6h"/>
                     </connections>
                 </viewController>
