@@ -30,6 +30,12 @@ class LoginViewController: UIViewController {
     // END-UOC-2
     
     // BEGIN-UOC-5
+    
+    // User and password are deleted
+    override func viewWillAppear(_ animated: Bool) {
+        usernameField.text = "";
+        passwordField.text = "";
+    }
 
     // END-UOC-5
     
