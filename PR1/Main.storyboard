@@ -79,6 +79,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Calculator" id="Ids-qj-Aak"/>
+                    <connections>
+                        <outlet property="finalAmountSlider" destination="bNU-mP-Gzd" id="mVW-7h-DWQ"/>
+                        <outlet property="initialAmountLabel" destination="bLf-1A-Vx2" id="BPk-XA-5Xa"/>
+                        <outlet property="initialAmountSlider" destination="tlh-Ie-S7a" id="YbC-76-JLz"/>
+                        <outlet property="interestRateLabel" destination="MnD-4L-vmG" id="0uk-P7-NZq"/>
+                        <outlet property="interestRateStepper" destination="aXe-YX-QBM" id="r1q-zR-2Ac"/>
+                        <outlet property="yearsLabel" destination="n8s-K7-GF1" id="Kdr-Wl-81Z"/>
+                        <outlet property="yearsStepper" destination="eiM-9v-E8K" id="PeG-qu-v5d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6C-yn-rCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
