@@ -26,6 +26,7 @@ class AuthenticationViewController: UIViewController, UITextFieldDelegate {
         fourthField.delegate = self;
     }
     
+    // Check length of TextFields
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let text = textField.text else { return true }
         let newLength = text.count + string.count - range.length
@@ -34,13 +35,14 @@ class AuthenticationViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func nextButton(_ sender: UIButton) {
         
+        // Textfield values are concatenated
         let password = firstField.text! + secondField.text! + thirdField.text! + fourthField.text!;
         
-        let loginAllowed = Services.validate( code: password );
+        let loginAllowed = Services.validate( code: password ); // Code is validated
         
-        if loginAllowed == true {
+        if loginAllowed == true { // Changes to the next screen
             performSegue(withIdentifier: "SegueToMainNavigation", sender: self);
-        } else {
+        } else { // Shows notification
             Utils.show(Message: "Sorry, the entered code is not valid.", WithTitle: "Notification", InViewController: self)
         }
     }

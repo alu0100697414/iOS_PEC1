@@ -15,14 +15,15 @@ class LoginViewController: UIViewController {
     // BEGIN-UOC-2
     @IBAction func loginTapped(_ sender: UIButton) {
         
+        // Check username and password
         let loginAllowed = Services.validate(
             username: String(usernameField.text!),
             password: String(passwordField.text!)
         );
         
-        if loginAllowed == false {
+        if loginAllowed == false { // Shows a notification
             Utils.show(Message: "Sorry, the username and password are invalid.", WithTitle: "Notification", InViewController: self);
-        } else {
+        } else { // Change to the next screen.
             performSegue(withIdentifier: "SegueToAuthentication", sender: self);
         }
     }
