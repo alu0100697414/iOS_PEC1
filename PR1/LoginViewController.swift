@@ -34,6 +34,8 @@ class LoginViewController: UIViewController {
     // User and password are deleted from form
     override func viewWillAppear(_ animated: Bool) {
         
+        super.viewWillAppear(<#T##animated: Bool##Bool#>);
+        
         usernameField.text = "";
         passwordField.text = "";
     }

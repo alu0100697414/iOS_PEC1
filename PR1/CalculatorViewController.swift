@@ -60,6 +60,8 @@ class CalculatorViewController: UIViewController {
     // Set the initial values
     override func viewDidLoad() {
         
+        super.viewDidLoad();
+        
         initialAmountLabel.text = "Initial amount: 100 €";
         interestRateLabel.text = "Interest rate: 1.00 %";
         yearsLabel.text = "Years: 1";
