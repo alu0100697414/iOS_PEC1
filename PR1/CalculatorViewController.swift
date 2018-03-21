@@ -24,31 +24,31 @@ class CalculatorViewController: UIViewController {
     
     // BEGIN-UOC-7.2
     
+    // Updates the amount
     @IBAction func amountChange(_ sender: UISlider) {
         
         initialAmountLabel.text = "Initial amount: " + String(format: "%.0f", initialAmountSlider.value) + " €";
-        
         updateFinalAmount();
     }
     
+    // Updates the interest
     @IBAction func interestChange(_ sender: UIStepper) {
         
         interestRateLabel.text = "Interest rate: " + String(format: "%.2f", interestRateStepper.value) + " %";
-        
         updateFinalAmount();
     }
     
+    // Updates the year
     @IBAction func yearChange(_ sender: UIStepper) {
         
         yearsLabel.text = "Years: " + String(format: "%.0f", yearsStepper.value);
-        
         updateFinalAmount();
     }
     
+    // Updates the final amount
     func updateFinalAmount() {
         
         let finalAmount = Services.calculateFinalAmount(ForAmount: initialAmountSlider.value, WithInterest: interestRateStepper.value/100, AndYears: yearsStepper.value);
-        
         finalAmountSlider.text = "Final amount: " + String(format: "%.2f", finalAmount) + " €";
     }
 
@@ -57,6 +57,7 @@ class CalculatorViewController: UIViewController {
     
     // BEGIN-UOC-7.3
     
+    // Set the initial values
     override func viewDidLoad() {
         
         initialAmountLabel.text = "Initial amount: 100 €";
