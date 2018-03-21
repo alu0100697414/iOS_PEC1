@@ -32,6 +32,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="100" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="tlh-Ie-S7a">
                                 <rect key="frame" x="14" y="125" width="386" height="31"/>
+                                <connections>
+                                    <action selector="amountChange:" destination="Fzd-PO-nZ2" eventType="valueChanged" id="A7T-3e-BuQ"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Interest rate: X.XX %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnD-4L-vmG">
                                 <rect key="frame" x="16" y="179" width="158" height="21"/>
@@ -41,6 +44,9 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" stepValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="aXe-YX-QBM">
                                 <rect key="frame" x="16" y="208" width="94" height="29"/>
+                                <connections>
+                                    <action selector="interestChange:" destination="Fzd-PO-nZ2" eventType="valueChanged" id="DYs-yc-3DP"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years: X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8s-K7-GF1">
                                 <rect key="frame" x="16" y="254" width="63" height="21"/>
@@ -50,6 +56,9 @@
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-9v-E8K">
                                 <rect key="frame" x="16" y="283" width="94" height="29"/>
+                                <connections>
+                                    <action selector="yearChange:" destination="Fzd-PO-nZ2" eventType="valueChanged" id="euU-Lx-ODw"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final amount: X.XX €" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-mP-Gzd">
                                 <rect key="frame" x="16" y="339" width="382" height="21"/>

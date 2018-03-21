@@ -8,6 +8,7 @@
 import UIKit
 
 class CalculatorViewController: UIViewController {
+    
     // BEGIN-UOC-7.1
     
     @IBOutlet weak var initialAmountLabel: UILabel!
@@ -22,11 +23,48 @@ class CalculatorViewController: UIViewController {
     
     
     // BEGIN-UOC-7.2
+    
+    @IBAction func amountChange(_ sender: UISlider) {
+        
+        initialAmountLabel.text = "Initial amount: " + String(format: "%.0f", initialAmountSlider.value) + " €";
+        
+        updateFinalAmount();
+    }
+    
+    @IBAction func interestChange(_ sender: UIStepper) {
+        
+        interestRateLabel.text = "Interest rate: " + String(format: "%.2f", interestRateStepper.value) + " %";
+        
+        updateFinalAmount();
+    }
+    
+    @IBAction func yearChange(_ sender: UIStepper) {
+        
+        yearsLabel.text = "Years: " + String(format: "%.0f", yearsStepper.value);
+        
+        updateFinalAmount();
+    }
+    
+    func updateFinalAmount() {
+        
+        let finalAmount = Services.calculateFinalAmount(ForAmount: initialAmountSlider.value, WithInterest: interestRateStepper.value/100, AndYears: yearsStepper.value);
+        
+        finalAmountSlider.text = "Final amount: " + String(format: "%.2f", finalAmount) + " €";
+    }
 
     // END-UOC-7.2
     
     
     // BEGIN-UOC-7.3
+    
+    override func viewDidLoad() {
+        
+        initialAmountLabel.text = "Initial amount: 100 €";
+        interestRateLabel.text = "Interest rate: 1.00 %";
+        yearsLabel.text = "Years: 1";
+        
+        updateFinalAmount();
+    }
 
     // END-UOC-7.3
 }
